@@ -1,11 +1,11 @@
-# COIT20256 Data Structures and Algorithms (2021-T1)
+# Mike O'Malley's COIT20256 Data Structures and Algorithms (2021-T1)
 
 All of my class work will be uploaded here.
 
 This repo will include:
-* all additional notes and examples presented during class,
-* any partial or fully worked tutorial, textbook, etc questions during class,
-* hints, tips, information ... given in class,
+* all additional notes and examples presented during my classes,
+* any partial or fully worked tutorial, textbook, etc questions during my classes,
+* hints, tips, information ... given in my classes,
 * etc.
 
 ### Contact info:
