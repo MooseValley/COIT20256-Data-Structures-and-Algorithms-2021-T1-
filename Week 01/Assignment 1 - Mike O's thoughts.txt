@@ -1,0 +1,54 @@
+Assignment 1 - Mike O's thoughts
+
+* You are going to need to understand / use enums, interface classes, abstract classes, inherritance, arrays and arraylists of objects, GUI development, GitHub, and just about everything else covered in prior courses.
+
+* If you are rusty / not 100% comfortable with any of these topics - brush up now !
+
+* Rule #1: Don't PANIC !
+
+* It's BIG
+
+* It's complex.
+
+* You will need to understand processing and code that someone else has written.
+
+* It's probably going to seem very strange and complex for you ...
+
+* It may seem like using a sledge hammer to crack a walnut - there's other much simpler ways to do this same processing, but this design does offer a lot of flexibility and headroom for future expansion.
+
+* Take it slow.  Read the Ass 1 spec - focus on the parts you need to understand.  e.g. Phase 1.
+
+* Don't try and understand the entire problem / all of the code at the start - you cannot.
+
+* Break it down, focus on a small part, read / understand that.  Slowly build up your upderstanding of the problem (the spec) and the code.
+
+* Review the code and spec ... multiple times.  Again and again and again ... and again ...
+
+* HIGHLY RECOMMENDED: Add your own comments to the code as you gain understanding of what it is doing.  You might find it useful to copy and paste parts of the Ass 1 spec in to the code as comments.
+
+* For many tasks for the Assignment, you only need to write a 1 or a few lines of code.
+Fill in the blanks.
+
+* Most of the code has been given to you.  A blessing and a curse ...
+
+* Compile and test often !!!!!!!!
+
+* REQUIRED: KEEP REGULAR BACKUPS !!!
+Get in the habbit of making regular backups.
+Backup your code to ZIP file when you reach a milestone / stable place.
+Do this multiple times per day if you are doing lots of work on your project.
+Give each ZIP file a unique version number and descriptive name.
+e.g.
+ShopP1 - v0.001 - add the ISchedule interface.zip
+ShopP1 - v0.002 - modify Simulator schedule() to add events in TIME order.zip
+:::
+
+* HIGHLY RECOMMENDED: use GitHub !
+Upload your Assignment 1 code and ZIP files to your PRIVATE GitHub Repo.
+Make sure your Repos, code, backups are kept secure / PRIVATE.
+
+From Page 4 of the Ass 1 Spec:
+* It is very important for you to develop this assignment incrementally and make sure each phase is working correctly before you try to add any additional functionality required in the next phase. Always keep a backup of the previous working phase before you move on to the next phase. That way, after phase 1, you will always have a working phase that can be submitted.
+
+
+.

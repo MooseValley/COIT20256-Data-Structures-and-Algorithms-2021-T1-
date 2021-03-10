@@ -1,0 +1,46 @@
+--------------------------------------------------------------------
+COIT20256 Data Structures and Algorithms (2021-T1)	
+https://moodle.cqu.edu.au/course/view.php?id=21043
+--------------------------------------------------------------------
+
+CC: Dr. Jacqueline Jarvis, Brisbane Campus, 
+	Contact: +61-07-3023-4238, 
+	Email: j.jarvis@cqu.edu.au
+
+Mike O'Malley's Email: part time only, only for quick answers:
+	Rocky campus tutor, 2 hours per week
+	m.omalley@cqu.edu.au
+
+Mike O'Malley's Java Videos - tons of useful videos:
+	http://tinyurl.com/MikesJavaVideos
+
+Mike O'Malley's Github for this course's tutorial work for this term:
+	https://github.com/MooseValley/COIT20256-Data-Structures-and-Algorithms-2021-T1-
+
+I *HATE* Programming !!!
+	https://www.youtube.com/watch?v=Tpse_oIA7Ko&list=PLfKyhM9sqOY5bHuIgk_taSa7qEBh8EPce&index=72
+
+https://www.youtube.com/watch?v=y-Dwjt2JTP4&list=PLfKyhM9sqOY5bHuIgk_taSa7qEBh8EPce&index=1
+
+
+REF:
+* Week 01\Assignment 1 - Mike O's thoughts.txt
+* Week 01 - Mike O Intro slides - v1.4 - link to my YouTube video for the story.ppt
+
+
+Assessment Overview
+1. Practical Assessment
+	Weighting: 20%
+	Assignment 1
+2. Practical Assessment
+	Weighting: 10%
+	Weekly tutorials - weeks 3-12, work, participation, engagement, ...
+	You need to submit work during class.
+3. Practical Assessment
+	Weighting: 20%
+	Assignment 2
+4. Examination
+	Weighting: 50%
+
+
+EOF.
