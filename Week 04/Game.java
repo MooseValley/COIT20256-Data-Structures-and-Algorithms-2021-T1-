@@ -30,6 +30,11 @@ public class Game
 
 	gamesStatus = GAME_STATUS.HUMAN_WINS;
 
+
+	if (gameStatus == 1) // In Progress   BAD
+
+
+ 
 	if (gamesStatus == GAME_STATUS.IN_PROGRESS)
 	{
 		klajklajdl

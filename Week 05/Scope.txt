@@ -1,0 +1,26 @@
+
+
+class ....
+{
+  private String name;  // Class scope - any method in the class has full access
+
+
+  public void test()
+  {
+     name = "Mike";
+  }
+
+
+  public void test2()
+  {
+     String name = "Mike"; // method scope - exists until the method ends.
+     
+     for (int k = 0; k < 1-; k++)
+     {
+        S.o.p (k);
+     }
+     
+     k = 10; // ERROR - k no longer exists
+  }
+
+}

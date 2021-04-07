@@ -1,0 +1,39 @@
+
+Customers arrive at store, start shopping, queue for checkout, get served, pay, depart store.
+
+Checkouts can process customers who are queued in a FIFO queue
+
+
+Random events
+* customers arrive at store and start shopping
+* decide they have everything head for a checkout
+* queue, wait to be served
+* get served and pay
+* depart
+
+Not interested in identifying customers, storing their shopping history, etc
+
+We are just interested in modelling things, seeing how the supermarket handles shoppers, so we can explore the effects of adding checkouts, and (maybe in the future) adding "Express Lanes" for customers with 10 items or less, etc, etc.
+
+Every second
+* customers may arrive randomly
+* customers who are shopping may decide to head for the checkout
+* checkouts will serve the next customer if they are not currently serving anyone
+* checkouts who are processing a customer's order and finalising payment may finish and the customer will depart
+
+It's a fairly simple "problem" but with lots of depth, especially when you start adding stuff like:
+* "Express Lanes" for customers with 10 items or less
+* customers who decide to keep shopping if the checkout queue is too long, etc).
+* store limits (stores can allow a maximum of 100 customers inside at any time)
+* Covid Pandemic limits (social distancing, etc)
+* Checkouts opening / closing, staff breaks, customer issues, etc
+* Shopping trolley, basket, etc sizes
+
+A million ways to do it.
+
+My suggestion - explore the problem on your own, understand the problem.
+
+Come back and look at the supplied code and use your knowledge to make sense of it.
+
+Supplied code is using a sledgehammer to crack a walnut ... but it is designed that way to allow future explantion, etc.
+
