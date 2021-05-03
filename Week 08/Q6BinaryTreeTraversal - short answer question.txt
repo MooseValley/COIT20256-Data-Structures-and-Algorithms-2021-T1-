@@ -1,0 +1,22 @@
+/*
+ Author:  Mike O'Malley
+   Date:  04-May-2021
+Descrtn:  Week 8 Tutorial questions - stacks, queues, trees, BinaryTrees, etc.
+
+Q6BinaryTreeTraversal
+6. Manually provide the inorder, preorder and postorder traversals of the binary search tree as shown below.
+
+                  49
+               /      \
+            /            \
+          28              83
+        /    \          /    \
+      18      40      71      97
+     /  \    /  \    /  \    /  \
+    11  19  32  44  69  72  92  99
+
+
+Mike O's extras / homework for students to do:
+*
+
+*/

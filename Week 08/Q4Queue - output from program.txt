@@ -1,0 +1,24 @@
+/*
+ Author:  Mike O'Malley
+   Date:  04-May-2021
+Descrtn:  Week 8 Tutorial questions - stacks, queues, trees, BinaryTrees, etc.
+
+Q4Queue
+4. What is the output from the following sequence of queue operations?
+Assume that the Queue class here is a class that has implemented standard Queue interface. (See API for the Queue interface. Note that peek “retrieves, but does not remove the head of the queue, or returns null if the queue is empty”.)
+
+	Queue <integer> q = new Queue<Integer>();
+	int a = 10;
+	q.enqueue(5);
+	q.enqueue(a);
+	q.enqueue(20);
+	System.out.println(q.peek());  // Output: __________
+	q.dequeue();
+	q.enqueue(30);
+	while (!q.isEmpty())
+		  System.out.print(q.dequeue() + " "); // Output: _________
+
+Mike O's extras / homework for students to do:
+*
+
+*/

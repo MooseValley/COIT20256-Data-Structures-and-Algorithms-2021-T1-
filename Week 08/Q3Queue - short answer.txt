@@ -1,0 +1,12 @@
+/*
+ Author:  Mike O'Malley
+   Date:  04-May-2021
+Descrtn:  Week 8 Tutorial questions - stacks, queues, trees, BinaryTrees, etc.
+
+Q3Queue
+3. In class, we created a Queue class from class List using composition. You could create a queue class by inheriting from class List, but that would constitute poor design. Why?
+
+Mike O's extras / homework for students to do:
+*
+
+*/
