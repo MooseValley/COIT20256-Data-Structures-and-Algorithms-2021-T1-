@@ -1,0 +1,257 @@
+Question 4
+a)	An image file called image.txt consists of m+2 records as follows:
+
+	Line 1	 the number of rows in the image (m)
+	Line 2	 the number of columns in the image (n)
+	Line 3 to Line m+2	 the rows for the image
+
+An image row consists of n numbers in the range 0-255.
+
+For example, the following is a valid image file:
+2
+2
+0 255
+0 255
+
+You are to write a program that will allow the user to load an image from a file into an m x n array and display the data in the image (pixel values).
+
+The program is to consist of the following files:
+
+•	Image.java: has the main method. The partially completed code that is to be completed is provided below.
+•	Analyser.java: This is the class that provides a load method to read and load the image into and m x n array and  provides a display method to print the contents of the array. The partially completed analyser code that is to be completed is provided below.
+•	InvalidImageException.java: The invalidImageException class is provided to capture errors that occur within the image file. Currently it is only used to catch invalid pixel values. (It could be extended to capture other image errors such as mismatches between specified rows and columns and actual rows and columns.) The start of the code for this exception is provided below.
+
+Image.java
+Code to be completed shown as “to do” below:
+
+import java.nio.file.*;
+import java.util.Scanner;
+
+public class Image {
+  // This application “analyses” an image file. Its path name is entered
+  // by the user. Currently analysis consists of loading a file and
+  // displaying its contents to the standard output.
+  //
+  // An image file contains m+2 lines, where
+  //   line 1 contains the number of rows in the image (m)
+  //   line 2 contains the number of columns in the image (n) and
+  //   line 3 to line m+2 contain the rows of the image. An image row
+  //          consists of n integers in the range 0-255
+
+  public static void main(String[] args) {
+     Analyser a = new Analyser();
+     Scanner s = new Scanner(System.in);
+
+     System.out.println( "Available commands are" );
+     System.out.println( "  Load image   >1 pathname" );
+     System.out.println( "  Dump image   >2" );
+     System.out.println( "  Quit         >9" );
+
+     System.out.print( "> " );
+     int command = s.nextInt();
+
+     while (command != 9) {
+        switch( command) {
+              case 1:
+                String ipath = s.next(); // get name of file
+
+                // <TO DO for case 1 >:
+                // use the analyser’s load method to read
+                // the image data into the analyser’s data structure
+                // “2D” array of int
+                // wrap this call to the analyser’s load method in a try
+                // in a try .. catch ..blocks to catch the
+                // No SuchFileException and InvalidImageExceptions
+                // that can be thrown by the
+                // load method.
+
+                 try {
+                     //To do – add code to load the image
+
+                 }
+                 catch( InvalidImageException iie ) {
+                     // Todo:
+                     // - print out the details about the exception
+                     // - print out the message (using the exceptions
+                     // message method.
+                     // - print the stack trace
+
+                     //you could then exit or allow the user to
+                     //go around the loop and load a different image
+                 }
+                 catch( NoSuchFileException fnfe ) {
+                     // Todo:
+                     // print message to tell user that the file can’t
+                     // be loaded and ask user to try again
+                 }
+
+                case 2:
+                    // Todo:
+                    // display contents of analyser’s image array
+            }
+            System.out.print( "> " );
+            command = s.nextInt();
+        }
+    }
+}
+
+
+
+(InvalidImageException.java starts on the next page)
+
+
+InvalidImageException.java
+
+The code for this class is complete.
+
+public class InvalidImageException extends Exception {
+
+    private int row;
+    private int column;
+    private String message;
+
+    public InvalidImageException(int r, int c){
+        super();
+        row = r;
+        column = c;
+        message = "Invalid pixel at ("+row+","+column+")";
+    }
+
+    public int rowNumber() {
+        return row;
+    }
+
+    public int columnNumber() {
+        return row;
+    }
+
+    @Override
+    public String getMessage() {
+        return message;
+    }
+
+    @Override
+    public String toString() {
+        return "Invalid pixel at ("+row+","+column+")";
+    }
+     }
+
+
+
+
+
+
+
+(Analyser.java starts on the next page)
+
+
+Analyser.java
+
+import java.nio.file.Paths;
+import java.nio.file.Path;
+import java.io.IOException;
+import java.nio.file.NoSuchFileException;
+import java.util.Scanner;
+
+// Analyse image files. Multiple image files can be analysed - when an // image file is loaded, the previous image is replaced.
+
+public class Analyser {
+    private int[][] image;
+    private int rows;
+    private int columns;
+
+    // the following load method throws two exceptions.
+    // Load can handle exceptions in a try / catch block.
+    // Note that if you catch the exception, it won't
+    // get thrown unless you throw it from the catch block.
+    // You can of course catch some exceptions and throw others, which
+    // is what we should really do.
+    // The wrong pathname is recoverable, but i/o errors are probably
+    // not, so you may as well just exit.
+    // Note that IOException actually has a lot of subclasses.
+
+    // load reads an image file into an m x n matrix – note that it
+    // throws 2 exceptions – are these both caught when load is
+    // invoked?  Check the main method
+    public void load(String ipath) throws NoSuchFileException,
+                                          InvalidImageException {
+         Scanner s = null;
+        // open image file and create a scanner for it
+        try {
+            // throws NoSuchFileException if unable to create path
+            // exercise/test this with non-existent path/file
+ Path p = Paths.get(ipath);
+
+           // Throws IOException if unable to create scanner.
+           // Exercise/test this with a directory rather than a file.
+           // Note that what is actually thrown in this case is a
+           // subclass of IOException - AccessDeniedException
+            s = new Scanner(p);
+
+           // process image file. No need for a while loop as the file
+           // size is specified by the first two records – use nested
+           // for loops
+
+           //TO DO:
+           // - read the number of rows (and assign to rows
+           // - read the number of columns (and assign to columns)
+           // - create an empty image array with space for the data
+           // - read the image file a row at a time (nested for loops)
+           // - if the pixel data read from the file is not an int
+           //   in the range 0 to 255 then create and throw and
+           //   InvalidImageException
+        }
+        catch (NoSuchFileException nsfe) {
+            //To do: throw the nsfe
+        }
+        catch (IOException ioe) {
+            //To do:
+            // print details of IOException
+            // print message using exception’s message method
+            // print stack trace
+            // exit the program
+                  }
+        finally {
+            //To do:  close the scanner, which will close the file
+        }
+    }
+
+    // display the contents of the current image (the image array) to
+    // standard output
+    public void display() {
+       //TODO iterate through the array and output the contents
+    }
+}
+
+b)	What tests do you need to carry out to make sure your code works correctly? You may wish to include some trace statements to check that your code is going into the catch blocks (and the finally block) when you expect it to do so.
+
+c)	Now, test your code as follows:
+
+•	Check it works correctly with a valid file, with valid data. Check options 1, 2, and 9 work correctly.
+•	Test you can open and display the contents of a second file that contains valid data.
+•	Test it with a file with invalid data (pixel not in the range 0 – 255 to test it throws InvalidImageException)
+•	Test it with an invalid filename.
+•	Test it with a valid directory name (i.e. to generate an IOEXception).
+
+Data for three files that can be used to perform the first three tests is provided below:
+
+image1 //valid data
+2
+2
+0 0
+0 0
+
+image2 // valid data –to read a second file
+2
+2
+255 255
+255 255
+
+image 3 //pixel incorrect integer range – to throw  InvalidImageException
+2
+2
+0 0
+-1 0
+
+
+

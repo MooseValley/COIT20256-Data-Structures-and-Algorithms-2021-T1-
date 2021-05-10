@@ -1,0 +1,4 @@
+Question 3
+When processing files exceptions must be handled. Other classes that we have encountered (e.g. Scanner) throw exceptions, but we can choose not to handle those exceptions. Likewise, for dereferencing of objects (null pointer exceptions) and array access (out of bounds exceptions). Why is this so?
+(Hint: remember this question from COIT20245? In your answer discuss the “Catch or Specify Requirement” and the three categories of “exceptions” (“checked”, “error” and “runtime”).)
+
