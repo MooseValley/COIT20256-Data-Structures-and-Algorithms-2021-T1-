@@ -5,7 +5,8 @@ Descrtn:  Week 8 Tutorial questions - stacks, queues, trees, BinaryTrees, etc.
 
 Q4Queue
 4. What is the output from the following sequence of queue operations?
-Assume that the Queue class here is a class that has implemented standard Queue interface. (See API for the Queue interface. Note that peek “retrieves, but does not remove the head of the queue, or returns null if the queue is empty”.)
+Assume that the Queue class here is a class that has implemented standard Queue interface. 
+(See API for the Queue interface. Note that peek “retrieves, but does not remove the head of the queue, or returns null if the queue is empty”.)
 
 	Queue <integer> q = new Queue<Integer>();
 	int a = 10;

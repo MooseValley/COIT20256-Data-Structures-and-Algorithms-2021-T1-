@@ -19,4 +19,12 @@ Q6BinaryTreeTraversal
 Mike O's extras / homework for students to do:
 *
 
+
+Pre-order
+49 28 18 11 19 40 32 ....
+
+
+Post-order
+11 19 18  32 44 40 28
+
 */

@@ -7,7 +7,7 @@ Q8BinaryTreeSearch
 8. (Binary Search Tree) Modify class Tree to include method contains(), which attempts to locate a specified value in a binary-search- tree object. The method should take as an argument a search key to locate. If the node containing the search key is found, the method should return a reference to that node’s data; otherwise, it should return null. The code for the Tree and TreeNode classes is provided on the unit website in the week 12 tutorial area.
 
 The signature for the contains() method you have to add to the Tree class is:
-	public T contains( T value )
+   public T contains( T value )
 
 The skeleton code for your main method is given below:
 
@@ -52,6 +52,61 @@ public class Q8BinaryTreeSearch
 {
    public static void main (String[] args)
    {
+      String inStr = "";
 
+/*
+      // create a Scanner to get input string
+      Scanner kb = new Scanner (System.in);
+
+      // Prompt the user for the line of test (string of words)
+      System.out.println ("Enter text:");
+
+      //use the Scanner object to read the input
+      inStr = kb.nextLine();
+*/
+
+      inStr = "Frankie  Mike       Bella Bear Dog    Biter Saminal  Teenie-Weenie  Ben";
+
+      String treeMapStr =
+         "                 Frankie                        " + "\n" +
+         "                /       \\                      " + "\n" +
+         "              /           \\                    " + "\n" +
+         "           Bella           Mike                 " + "\n" +
+         "          /    \\           /   \\              " + "\n" +
+         "      Bear     Biter     Dog   Saminal          " + "\n" +
+         "               /                  \\            " + "\n" +
+         "             Ben                Teenie-Weenie   " + "\n" +
+         "";
+
+      System.out.println ("Mike's Tree:" + "\n" + treeMapStr + "\n");
+
+
+      //Create a new tree (Tree<String> tree = ...)to store the words
+      Tree<String> tree = new Tree<String> ();
+
+      // insert input string of words into the into the tree
+      // use split("\\s+") to split the input String of words into
+      // individual words and insert the words into the tree
+      for ( String word : inStr.split( "\\s+" ) )
+      {
+         //insert the word into the tree
+         tree.insertNode (word);
+      }
+
+      String seachStr  = "";
+
+      seachStr  = "Bear";
+      System.out.println ("\n" + "Search Tree for: '" + seachStr + "' ...");
+      System.out.println ( tree.contains(seachStr) );
+
+      seachStr  = "Pooch with No Name";
+      System.out.println ("\n" + "Search Tree for: '" + seachStr + "' ...");
+      System.out.println ( tree.contains(seachStr) );
+
+      seachStr  = "Saminal";
+      System.out.println ("\n" + "Search Tree for: '" + seachStr + "' ...");
+      System.out.println ( tree.contains(seachStr) );
+
+      System.out.println ();
    }
 }

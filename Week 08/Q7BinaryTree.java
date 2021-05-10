@@ -44,10 +44,85 @@ Mike O's extras / homework for students to do:
 *
 
 */
+
+import java.util.Scanner;
+
 public class Q7BinaryTree
 {
    public static void main (String[] args)
    {
+	   String inStr = "";
 
-   }
+/*
+	   // create a Scanner to get input string
+	   Scanner kb = new Scanner (System.in);
+
+	   // Prompt the user for the line of test (string of words)
+	   System.out.println ("Enter text:");
+
+	   //use the Scanner object to read the input
+	   inStr = kb.nextLine();
+*/
+
+		inStr = "Frankie  Mike       Bella Bear Dog    Biter Saminal  Teenie-Weenie  Ben";
+
+		String treeMapStr =
+			"                 Frankie                        " + "\n" +
+			"                /       \\                      " + "\n" +
+			"              /           \\                    " + "\n" +
+			"           Bella           Mike                 " + "\n" +
+			"          /    \\           /   \\              " + "\n" +
+			"      Bear     Biter     Dog   Saminal          " + "\n" +
+			"               /                  \\            " + "\n" +
+			"             Ben                Teenie-Weenie   " + "\n" +
+			"";
+
+	   System.out.println ("Mike's Tree:" + "\n" + treeMapStr + "\n");
+
+
+		//Create a new tree (Tree<String> tree = ...)to store the words
+		Tree<String> tree = new Tree<String> ();
+
+		// insert input string of words into the into the tree
+		// use split("\\s+") to split the input String of words into
+		// individual words and insert the words into the tree
+		for ( String word : inStr.split( "\\s+" ) )
+		{
+			//insert the word into the tree
+			tree.insertNode (word);
+		}
+
+		//print out the contents of the tree using preorder traversal
+		System.out.println ("\n" + "preorderTraversal:");
+		tree.preorderTraversal();
+		System.out.println ();
+
+		//print out the contents of the tree using inorder traversal
+		System.out.println ("\n" + "inorderTraversal:");
+		tree.inorderTraversal();
+		System.out.println ();
+
+		//print out the contents of the tree using postorder traversal
+		System.out.println ("\n" + "postorderTraversal:");
+		tree.postorderTraversal();
+		System.out.println ();
+
+		System.out.println ();
+	}
 }
+
+
+/*
+		inStr = "Frankie  Mike       Bella Bear Dog    Biter Saminal  Teenie-Weenie  Ben";
+
+                             Frankie
+                             /      \
+                        Bella        Mike
+                        /   \           \
+                     Bear    Dog        Saminal
+                       \                  \
+                       Biter             Teenie-Weenie
+                       /
+                     Ben
+
+*/
