@@ -1,3 +1,88 @@
 Question 2
 If, in the code for one of your methods (call it method1), you invoke another method that throws a checked exception, what are the two options available to you for handling the exception in your method1?
 
+
+// OPTION #1
+
+public void method1 ()
+{
+   :::
+   otherMethod ();
+   :::
+}
+
+public void otherMethod ()
+{
+    try
+    {
+    }
+    catch (.....)
+    {
+    }
+}
+
+
+// OPTION #2: OK if NO checked exceptions
+
+public void method1 ()
+{
+   :::
+   try
+   {
+      otherMethod ();
+   }
+   catch (.....)
+   {
+   }
+   :::
+}
+
+public void otherMethod ()
+{
+   :::  
+}
+
+
+// OPTION #2: OK if NO checked exceptions
+
+public void method1 ()
+{
+   :::
+   try
+   {
+      otherMethod ();
+   }
+   catch (.....)
+   {
+   }
+   :::
+}
+
+public void otherMethod ()
+{
+   :::  
+}
+
+
+
+// OPTION #3: checked exceptions in otherMethod ()
+
+public void method1 ()
+{
+   :::
+   try
+   {
+      otherMethod ();
+   }
+   catch (.....)
+   {
+   }
+   :::
+}
+
+public void otherMethod ()  throws ....
+{
+   :::  OK if NO checked exceptions
+}
+
+

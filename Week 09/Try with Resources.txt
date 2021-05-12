@@ -1,0 +1,31 @@
+
+
+
+try
+{
+   create objects - files, etc
+   process files, etc
+}
+catch (....)
+{
+}
+catch (....)
+{
+}
+finally
+{
+   close files, cleanup
+}
+
+// Try with Resources
+try (create objects - files, etc)
+{
+   process files, etc
+}
+catch (....)
+{
+}
+catch (....)
+{
+}
+

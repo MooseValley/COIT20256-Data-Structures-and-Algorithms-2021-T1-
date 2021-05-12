@@ -1,3 +1,97 @@
 Question 1
 If no exceptions are thrown in a try block, where does control proceed to, when the try block completes execution?
 
+
+
+Exceptions
+
+Checked
+	File IO
+	network IO
+	databse IO
+	If you try and do these things your code wont even compile UNLESS you handle the exceptions
+	try ... catch inside the method  OR   throws .... on the method header
+	
+Unckecked Exceptions
+	Everything else - divide by 0, try to convert "abc" to an int, array out of bounds, etc
+	Up to the programmer whether they want to handle these gracefully or let your program crash.
+	
+
+
+	int age = 0;
+	
+	try
+	{
+	   age = Integeger.parseInt (inputStr);
+	}
+	catch (NumberFormatException err)
+	{
+		JOptionPane.showMessageDialog (.......);
+		System.out.println (.....);
+		err.printStackTrace();
+		System.out.println ("Error: " + err.toString() );
+
+		age = -1; // ERROR
+	}
+
+
+
+// Note: a silly example ...
+public int getAgeFromInput (String inputStr)
+{
+	int age = 0;
+	
+	try
+	{
+	   ::::
+	   age = Integeger.parseInt (inputStr);
+	   ::::
+	   :::: // other code that might cause other types of Exceptions ...
+	   ::::
+	}
+	catch (NumberFormatException err)
+	{
+		JOptionPane.showMessageDialog (.......);
+		System.out.println (.....);
+		err.printStackTrace();
+		System.out.println ("Error: " + err.toString() );
+
+		age = -1; // ERROR
+	}
+	catch (ArithmeticException err)
+	{
+		JOptionPane.showMessageDialog (.......);
+		System.out.println (.....);
+		err.printStackTrace();
+		System.out.println ("Error: " + err.toString() );
+
+		age = -1; // ERROR
+	}
+	catch (Exception err)
+	{
+		JOptionPane.showMessageDialog (.......);
+		System.out.println (.....);
+		err.printStackTrace();
+		System.out.println ("Error: " + err.toString() );
+
+		age = -1; // ERROR
+	}
+	
+OR
+	// Note: a silly example - just showing how you can combine them ...
+	catch (NumberFormatException | ArithmeticException | Exception err)
+	{
+		JOptionPane.showMessageDialog (.......);
+		System.out.println (.....);
+		err.printStackTrace();
+		System.out.println ("Error: " + err.toString() );
+
+		age = -1; // ERROR
+	}
+
+
+	return age;
+	
+}
+
+

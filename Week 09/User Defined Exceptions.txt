@@ -1,0 +1,10 @@
+
+
+GUI - handles the gui
+
+	Array class - methods for working with an array of Customers - search, sort, save to file, etc
+
+	Customer - contains data and methods for 1 customer
+	- validation should happen here.
+	
+	

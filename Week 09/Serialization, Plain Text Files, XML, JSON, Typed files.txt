@@ -1,0 +1,95 @@
+Serialization, Plain Text Files, XML, JSON, Typed files
+
+
+serialized
+* kind of like a version number for your class / files
+* explicit or implicit
+* you can create a Serialized ID variable and assign it a value in your data class.
+* or Java will allocate one for you automaticaly behind the scenes.
+
+
+
+Typed File
+
+Customer
+	name
+	age
+
+write to file cust.getName()
+write new line
+write to file cust.getAge()
+write new line
+
+
+Mike
+55
+Iftekhar
+23
+
+
+If you add an address or any other fields or instance methods ... Java increments the Serialized ID.
+So, your program wont load old format data files (based on old classes with different fields).
+
+
+
+
+PLAIN TEXT File
+
+
+---------------------------------------------------------------
+
+TYPED FILES
+
+File of Customer
+
+for each customer
+	Write Customer
+	
+
+Lots of strange characters - something like this:	
+@%!@&%&*TDAJFGADMikeY!^#!*IGHKJGDJHAD55Iftekhar@@&*&*GJJGA23*(&!IE
+
+
+
+File of ArrayList<Customer>
+
+Write ArrayList<Customer>
+
+
+
+
+CSV
+Mike,55
+Iftekhar,23
+
+TSV
+Mike	55
+Iftekhar	23
+
+XML
+
+<customers>
+<customer>
+	<id>1</id>
+	<name>Mike</name>
+	<age>55</age>
+</customer>
+<customer>
+	<id>2</id>
+	<name>Iftekhar</name>
+	<age>23</age>
+</customer>
+</customers>
+
+
+
+JSON
+
+{ { "id": 1, "name": "Mike", "age": 55 }, { "id": 2, "name": "Iftekhar", "age": 23 } }
+
+
+
+
+
+**************************************************************
+

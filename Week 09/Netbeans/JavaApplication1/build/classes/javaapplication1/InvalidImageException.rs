@@ -1,0 +1,1 @@
+InvalidImageException
