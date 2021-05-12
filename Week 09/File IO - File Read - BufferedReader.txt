@@ -1,0 +1,32 @@
+
+// Neat and Tidy: BufferedReader - try with resources
+
+// Fixed to work with Java v1.8
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileReadBufferedReader
+{
+    public static void main(String[] argv)
+    {
+        int lineCount = 0;
+
+        try (BufferedReader b = Files.newBufferedReader(Paths.get("itcont.txt")) )
+        {
+            String readLine = "";
+            while ((readLine = b.readLine()) != null)
+            {
+               System.out.println(readLine);
+               lineCount++;
+            }
+        }
+        catch (IOException ignored)
+        {
+        }
+
+        System.out.println(lineCount);
+    }
+}
