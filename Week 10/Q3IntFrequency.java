@@ -1,4 +1,7 @@
 /*
+ Author:  Mike O'Malley
+   Date:  18-May-2021
+Descrtn:  Week 10 Tutorial questions - Lambdas, Streams, Functional programming
 
 3.      Assuming that random is a SecureRandom object, explain in detail the stream pipeline:
 

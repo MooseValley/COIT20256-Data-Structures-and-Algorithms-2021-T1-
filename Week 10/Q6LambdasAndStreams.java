@@ -1,4 +1,8 @@
 /*
+ Author:  Mike O'Malley
+   Date:  18-May-2021
+Descrtn:  Week 10 Tutorial questions - Lambdas, Streams, Functional programming
+
 6. Use the class Invoice provided at the unit website in Week 10 . Use the sample data shown below. Perform the following queries on the array of Invoice Objects and display the results:
 e) Use lambdas and streams to sort the Invoice objects by Price, then display the results.
 f) Use lambdas and streams to map each Invoice to its PartDescription and Qunatity, sort the results by Quantity, and display the results.

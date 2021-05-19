@@ -1,4 +1,8 @@
 /*
+ Author:  Mike O'Malley
+   Date:  18-May-2021
+Descrtn:  Week 10 Tutorial questions - Lambdas, Streams, Functional programming
+
 2. Complete and test Activity Two from the lecture. The question is repeated below:
 
 Assuming the following declaration for list,
