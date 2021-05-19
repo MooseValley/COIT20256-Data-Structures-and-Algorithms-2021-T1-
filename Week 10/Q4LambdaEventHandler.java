@@ -11,3 +11,10 @@ slider.valueProperty().addListener(
   }
 );
 */
+
+// This should be pretty close ... need to create a simple GUI with a JSlider to check ...
+
+slider.valueProperty().addListener( (ov, oldValue, newValue) ->
+                                    { System.out.printf("The slider's new value is %s%n", newValue); }
+                                   );
+

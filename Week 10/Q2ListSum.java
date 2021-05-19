@@ -23,8 +23,28 @@ public class Q2ListSum
    {
       List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 
+      /*
+      Issue is that sum() requires int data not Integer data - the primitive type not the Wrapper class.
+      We need to convert the list of values to int.
+      One way to do this is use mapToInt.
+      */
+
       int sum = list.stream()
-                .filter(value -> value % 2 != 0)
-                .sum()
+                .filter(value -> value % 2 != 0)  // Odd integers only
+                .mapToInt (Integer :: intValue)
+                .sum();
+
+      System.out.println ("Sum = " + sum);
+
+
+      // Like above, but using a Lambda and type casting ...
+      // I like this better than the above "Integer :: intValue" solution.
+      int sum2 = list.stream()
+                .filter(value -> value % 2 != 0)  // Odd integers only
+                .mapToInt (x -> (int) x)
+                .sum();
+
+      System.out.println ("Sum = " + sum);
+
    }
 }
