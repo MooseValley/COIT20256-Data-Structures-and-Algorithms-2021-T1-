@@ -1,0 +1,18 @@
+U:\java> javac -Xlint GraphTester.java
+GraphTester.java:13: warning: [rawtypes] found raw type: UnweightedGraph
+      UnweightedGraph<String> cities = new UnweightedGraph (vertices, edges);
+                                           ^
+  missing type arguments for generic class UnweightedGraph<V>
+  where V is a type-variable:
+    V extends Object declared in class UnweightedGraph
+GraphTester.java:13: warning: [unchecked] unchecked call to UnweightedGraph(V[],int[][]) as a member of the raw type UnweightedGraph
+      UnweightedGraph<String> cities = new UnweightedGraph (vertices, edges);
+                                       ^
+  where V is a type-variable:
+    V extends Object declared in class UnweightedGraph
+GraphTester.java:13: warning: [unchecked] unchecked conversion
+      UnweightedGraph<String> cities = new UnweightedGraph (vertices, edges);
+                                       ^
+  required: UnweightedGraph<String>
+  found:    UnweightedGraph
+3 warnings
