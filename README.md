@@ -42,7 +42,7 @@ and briefly discuss other ways (Desktop App, Netbeans, Eclipse, develop your own
 <br>https://www.youtube.com/watch?v=A30iwpDbkwc
 
 * Mike O's Programming Practice Questions - v0.008 (PDF):
-Dozens of interesting programming questions for you to solve.
+Dozens of interesting programming questions for you to practice, explore, solve.
 <br>https://www.mediafire.com/file/dpk59wchfu715to/Mike_O%27s_Programming_Practice_Questions_-_v0.008.pdf/file
 
 Mike O'Malley
